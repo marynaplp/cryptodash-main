@@ -1,0 +1,40 @@
+/* File: src/components/cryptotable.css, src/pages/profile.css */
+
+.crypto-table, .favorite-cryptos {
+  margin: 20px 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.crypto-table th, .crypto-table td, .favorite-cryptos th, .favorite-cryptos td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.crypto-table th, .favorite-cryptos th {
+  background-color: #333;
+  color: white;
+}
+
+.crypto-table td, .favorite-cryptos td {
+  text-align: left;
+}
+
+.crypto-table .negative, .favorite-cryptos .negative {
+  color: red;
+}
+
+.crypto-table .positive, .favorite-cryptos .positive {
+  color: green;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  text-decoration: underline;
+}

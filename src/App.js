@@ -9,6 +9,7 @@ import Signup from './components/Signup';
 import Profile from './components/Profile';
 import FavoriteCryptos from './components/FavoriteCryptos';
 import './App.css';
+import CoinDetail from './components/CoinDetail';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
             <Route path="/favorites" element={<ProtectedRoute><FavoriteCryptos /></ProtectedRoute>} />
+            <Route path="/coin/:id" element={<CoinDetail />} />
+
           </Routes>
         </div>
       </Router>

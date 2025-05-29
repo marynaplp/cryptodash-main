@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import TradingViewWidget from 'react-tradingview-widget';
 
 function CoinDetail() {
   const { id } = useParams();
@@ -26,7 +27,17 @@ function CoinDetail() {
       <p>Market cap: ${coin.market_data.market_cap.usd.toLocaleString()}</p>
       <p>Volume: {coin.market_data.total_volume.usd.toLocaleString()}</p>
       <p>Hashing algorithm: {coin.hashing_algorithm || 'N/A'}</p>
-      {/* Add chart if needed */}
+      <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center' }}>
+      <div style={{ width: '90%', maxWidth: '800px', height: '400px' }}>
+
+      <TradingViewWidget
+          symbol={`${coin.symbol.toUpperCase()}USD`}
+          theme="light"
+          locale="en"
+          autosize
+        />
+        </div>
+      </div>
     </div>
   );
 }

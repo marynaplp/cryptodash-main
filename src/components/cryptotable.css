@@ -1,0 +1,40 @@
+/* File: src/components/cryptotable.css */
+.crypto-table {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .crypto-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .crypto-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .crypto-table th,
+  .crypto-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .crypto-table th {
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  .crypto-table td {
+    text-align: center;
+  }
+  
+  .crypto-table .negative {
+    color: red;
+  }
+  
+  .crypto-table .positive {
+    color: green;
+  }
+  

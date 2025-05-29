@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import TradingViewWidget from 'react-tradingview-widget';
+import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets";
 
 function CoinDetail() {
   const { id } = useParams();
@@ -30,12 +30,12 @@ function CoinDetail() {
       <div style={{ marginTop: '2rem', display: 'flex', justifyContent: 'center' }}>
       <div style={{ width: '90%', maxWidth: '800px', height: '400px' }}>
 
-      <TradingViewWidget
+      <AdvancedRealTimeChart
           symbol={`${coin.symbol.toUpperCase()}USD`}
           theme="light"
           locale="en"
           autosize
-        />
+       />
         </div>
       </div>
     </div>
